@@ -22,8 +22,9 @@ Software dependencies (not sure if all of them are in use):
 * ArduinoJson.h
 
 Problems:
-* Didn't find and good HTTP libra, wrote a function instead (with blackjack and ...)
+* Didn't find and good HTTP lib, wrote a function instead (with blackjack and ...)
 
 Will merge your pull requests:
 * if you fix Wifi creds and REST urls
 * find a bug in getData function (it works quite well imho, but not really tested)
+* change delay(3000) to something reasonable, 1000 is more than enough (there has to be something because it will start diging emptiness and writes nonsense to buffer)
